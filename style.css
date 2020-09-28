@@ -87,5 +87,8 @@ d-appendix {
 	color: cyan; /* doesn't work */
 }
 
-
-
+/* asides- cannot bump font size or change color */
+d-article aside {
+	font-size: .8rem
+	color: rgba(0, 0, 0, 0.9);
+}
