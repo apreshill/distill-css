@@ -78,13 +78,17 @@ d-byline {
 /* I'm unable to affect the color of either of these */
 /* the text here gets flagged for low contrast */
 d-appendix h3 {
-	color: cyan; /* doesn't work */
+	color: rgba(0,0,0,0.75);
 	letter-spacing: .1em;
 	text-transform: uppercase;
 }
 
 d-appendix {
-	color: cyan; /* doesn't work */
+	color: rgba(0,0,0,0.6);
+}
+
+d-footnote-list a.footnote-backlink {
+	color: rgba(0,0,0,0.6);
 }
 
 /* asides- cannot bump font size or change color */
