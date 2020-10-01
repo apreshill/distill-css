@@ -1,0 +1,66 @@
+/* This seems to be the starting point
+html {
+  font-size: 16px;
+}*/
+
+/* change body color + size */
+body {
+  color: var(--body-color);
+  font-size: var(--body-size);
+}
+
+/* change code font and bump size */
+d-article div.sourceCode code, 
+d-article pre code {
+	font-size: var(--code-size);
+}
+
+/* metadata section */
+d-byline h3 {
+	font-size: var(--byline-h3-size);
+	color: var(--byline-h3-color);
+}
+
+d-byline {
+	font-size: var(--byline-size);
+	color: var(--byline-color);
+}
+
+d-byline a, 
+d-article d-byline a {
+	color: var(--byline-color);
+}
+
+/* The TOC on top */
+.d-contents nav h3 {
+	font-size: var(--toc-h3-size);
+	color: var(--toc-h3-color);
+}
+
+.d-contents nav a {
+	font-size: var(--toc-size);
+	color: var(--toc-color);
+}
+
+
+/* APPENDIX */
+d-appendix h3 {
+  font-size: var(--appx-h3-size);
+	color: var(--appx-h3-color);
+}
+
+d-appendix {
+  font-size: var(--appx-size);
+	color: var(--appx-color);
+}
+
+d-footnote-list a.footnote-backlink {
+	color: var(--appx-color);
+}
+
+/* ASIDES */
+d-article aside {
+	font-size: var(--aside-size);
+	color: var(--aside-color);
+}
+

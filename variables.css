@@ -1,0 +1,23 @@
+:root {
+  /* font sizes */
+  --base-size:      16px;
+  --body-size:      1.2rem;
+  --code-size:      1.0rem;
+  --toc-h3-size:    0.9rem;
+  --toc-size:       1.0rem;
+  --byline-h3-size: 0.9rem;
+  --byline-size:    1.0rem;
+  --appx-h3-size:   0.95rem;
+  --appx-size:      0.95rem;
+  --aside-size:     1.0rem;
+  /* font colors */
+  --body-color:      #a1024a;
+  --toc-h3-color:    rgba(0, 0, 0, 0.75);
+  --toc-color:       #a1024a;
+  --byline-h3-color: rgba(0, 0, 0, 0.75);
+  --byline-color:    #a1024a;
+  --appx-h3-color:   rgba(0,0,0,0.75);
+  --appx-color:      rgba(0,0,0,0.6);
+  --appx-foot-color: rgba(0,0,0,0.6); /*should probably inherit from appx-color */
+  --aside-color:     rgba(0, 0, 0, 0.9);
+}
