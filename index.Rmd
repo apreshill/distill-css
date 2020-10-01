@@ -12,13 +12,25 @@ output:
   distill::distill_article:
     toc: true
     toc_float: false
-    css: style.css
+    css: [variables.css, base-style.css]
 creative_commons: CC BY
 repository_url: https://github.com/apreshill/distill-css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(sass)
+```
+
+
+## Style here
+
+```{sass eval=FALSE}
+$body-bg: red;
+body{
+  background-color: $body-bg;
+}
+
 ```
 
 ## Text here
@@ -40,6 +52,4 @@ penguins %>%
   filter(year == 2007 & species == "Gentoo") %>% 
   summarise(mean_fl = mean(flipper_length_mm, na.rm = TRUE))
 ```
-
-
 
