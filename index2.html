@@ -110,7 +110,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","creative_commons","repository_url"]}},"value":[{"type":"character","attributes":{},"value":["Testing distill article CSS"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Nora Jones"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]},{"type":"character","attributes":{},"value":["Spacely Sprockets"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]}]}]},{"type":"character","attributes":{},"value":["2020-10-01"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["base-variables.css","base-style.css"]}]}]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://github.com/apreshill/distill-css"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","creative_commons","repository_url"]}},"value":[{"type":"character","attributes":{},"value":["Testing distill article CSS"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Nora Jones"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]},{"type":"character","attributes":{},"value":["Spacely Sprockets"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]}]}]},{"type":"character","attributes":{},"value":["2020-10-01"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["theme.css"]}]}]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://github.com/apreshill/distill-css"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1162,6 +1162,136 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
   </script>
 
+  <style type="text/css">
+
+  /* base variables */
+
+  :root {
+    /*-- font sizes --*/
+    --title-size:      50px;                /* default */
+    --body-size:       1.06rem;             /* default */
+    --code-size:       14px;                /* default */
+    --toc-h3-size:     18px;                /* default */
+    --toc-size:        13px;                /* default */
+    --byline-h3-size:  0.6rem;              /* default */
+    --byline-size:     0.8rem;              /* default */
+    --appx-h3-size:    15px;                /* default */
+    --appx-size:       0.8em;               /* default */
+    --aside-size:      12px;                /* default */
+    --fig-cap-size:    13px;                /* default */
+    /*-- font colors --*/
+    --title-color:     black;               /* default */
+    --body-color:      rgba(0, 0, 0, 0.8);  /* default */
+    --toc-h3-color:    rgba(0, 0, 0, 0.6);  /* default */
+    --byline-h3-color: rgba(0, 0, 0, 0.5);  /* default */
+    --byline-color:    rgba(0, 0, 0, 0.8);  /* default */
+    --appx-h3-color:   rgba(0, 0, 0, 0.65); /* default */
+    --appx-color:      rgba(0, 0, 0, 0.5);  /* default */
+    --aside-color:     rgba(0, 0, 0, 0.6);  /* default */
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);  /* default */
+  }
+
+  /* base variables */
+
+  :root {
+    /*-- font sizes --*/
+    --title-size:      3rem;                /* default */
+    --body-size:       1.1rem;              /* default */
+    --code-size:       1.0rem;              /* default */
+    --toc-h3-size:     1.1rem;              /* default */
+    --toc-size:        0.9rem;              /* default */
+    --byline-h3-size:  0.9rem;              /* default */
+    --byline-size:     1.0rem;              /* default */
+    --appx-h3-size:    1.0rem;              /* default */
+    --appx-size:       1.0rem;              /* default */
+    --aside-size:      0.8rem;              /* default */
+    --fig-cap-size:    1.0rem;              /* default */
+    /*-- font colors --*/
+    --title-color:     black;               /* default */
+    --body-color:      rgba(0, 0, 0, 0.8);  /* default */
+    --toc-h3-color:    rgba(0, 0, 0, 0.6);  /* default */
+    --byline-h3-color: rgba(0, 0, 0, 0.6);  /* default */
+    --byline-color:    rgba(0, 0, 0, 0.8);  /* default */
+    --appx-h3-color:   rgba(0, 0, 0, 0.65); /* default */
+    --appx-color:      rgba(0, 0, 0, 0.6);  /* default */
+    --aside-color:     rgba(0, 0, 0, 0.6);  /* default */
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);  /* default */
+  }
+
+  /* base style */
+
+  /*-- TITLE --*/
+  d-title h1 {
+    font-size: var(--title-size);
+    color: var(--title-color);
+  }
+
+  /*-- BODY --*/
+  d-article {
+    font-size: var(--body-size);
+    color: var(--body-color);
+  }
+
+  /*-- CODE --*/
+  d-article div.sourceCode code,
+  d-article pre code {
+  	font-size: var(--code-size);
+  }
+
+  /*-- METADATA --*/
+  d-byline h3 {
+  	font-size: var(--byline-h3-size);
+  	color: var(--byline-h3-color);
+  }
+
+  d-byline {
+  	font-size: var(--byline-size);
+  	color: var(--byline-color);
+  }
+
+  d-byline a,
+  d-article d-byline a {
+  	color: var(--byline-color);
+  }
+
+  /*-- TABLE OF CONTENTS --*/
+  .d-contents nav h3 {
+  	font-size: var(--toc-h3-size);
+  	color: var(--toc-h3-color);
+  }
+
+  .d-contents nav a {
+  	font-size: var(--toc-size);
+  }
+
+  /*-- APPENDIX --*/
+  d-appendix h3 {
+    font-size: var(--appx-h3-size);
+  	color: var(--appx-h3-color);
+  }
+
+  d-appendix {
+    font-size: var(--appx-size);
+  	color: var(--appx-color);
+  }
+
+  d-footnote-list a.footnote-backlink {
+  	color: var(--appx-color);
+  }
+
+  /*-- ASIDE --*/
+  d-article aside {
+  	font-size: var(--aside-size);
+  	color: var(--aside-color);
+  }
+
+  /*-- FIGURE CAPTIONS --*/
+  figure .caption,
+  figure figcaption {
+  	font-size: var(--fig-cap-size);
+  	color: var(--fig-cap-color);
+  }
+  </style>
   <!--/radix_placeholder_distill-->
   <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -2182,95 +2312,6 @@ distill-header .nav a {
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">
-
-:root {
-
---title-size: 50px; 
---body-size: 1.06rem; 
---code-size: 14px; 
---toc-h3-size: 18px; 
---toc-size: 13px; 
---byline-h3-size: 0.6rem; 
---byline-size: 0.8rem; 
---appx-h3-size: 15px; 
---appx-size: 0.8em; 
---aside-size: 12px; 
---fig-cap-size: 13px; 
-
---title-color: black; 
---header-color: rgba(0, 0, 0, 0.8); 
---body-color: rgba(0, 0, 0, 0.8); 
---toc-h3-color: rgba(0, 0, 0, 0.6); 
---byline-h3-color: rgba(0, 0, 0, 0.5); 
---byline-color: rgba(0, 0, 0, 0.8); 
---appx-h3-color: rgba(0, 0, 0, 0.65); 
---appx-color: rgba(0, 0, 0, 0.5); 
---aside-color: rgba(0, 0, 0, 0.6); 
---fig-cap-color: rgba(0, 0, 0, 0.6); 
-}</style>
-  <style type="text/css">
-d-title h1 {
-color: var(--title-color);
-font-size: var(--title-size);
-}
-
-d-article > p {
-color: var(--body-color);
-font-size: var(--body-size);
-}
-d-article:not(p) {
-color: var(--header-color);
-}
-
-d-article div.sourceCode code,
-d-article pre code {
-font-size: var(--code-size);
-}
-
-d-byline h3 {
-font-size: var(--byline-h3-size);
-color: var(--byline-h3-color);
-}
-d-byline {
-font-size: var(--byline-size);
-color: var(--byline-color);
-}
-d-byline a,
-d-article d-byline a {
-color: var(--byline-color);
-}
-
-.d-contents nav h3 {
-font-size: var(--toc-h3-size);
-color: var(--toc-h3-color);
-}
-.d-contents nav a {
-font-size: var(--toc-size);
-}
-
-d-appendix h3 {
-font-size: var(--appx-h3-size);
-color: var(--appx-h3-color);
-}
-d-appendix {
-font-size: var(--appx-size);
-color: var(--appx-color);
-}
-d-footnote-list a.footnote-backlink {
-color: var(--appx-color);
-}
-
-d-article aside {
-font-size: var(--aside-size);
-color: var(--aside-color);
-}
-
-figure .caption, figure figcaption {
-font-size: var(--fig-cap-size);
-color: var(--fig-cap-color);
-}
-</style>
 
 </head>
 

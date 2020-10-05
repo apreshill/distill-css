@@ -1,5 +1,6 @@
 :root {
   /* font sizes */
+  --title-size:     50px;
   --base-size:      16px;
   --body-size:      1.2rem;
   --code-size:      1.0rem;
@@ -11,6 +12,7 @@
   --appx-size:      0.95rem;
   --aside-size:     1.0rem;
   /* font colors */
+  --title-color:     black;
   --body-color:      #a1024a;
   --toc-h3-color:    rgba(0, 0, 0, 0.75);
   --toc-color:       #a1024a;
